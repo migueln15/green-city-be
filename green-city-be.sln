@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "green-city-be.API", "green-city-be.API\green-city-be.API.csproj", "{6D107FB4-EA93-43CE-BFEE-7801FDA65892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "green-city-be.DOMAIN", "green-city-be.DOMAIN\green-city-be.DOMAIN.csproj", "{6B7236F7-6252-47FE-B655-987AFE24F797}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D107FB4-EA93-43CE-BFEE-7801FDA65892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D107FB4-EA93-43CE-BFEE-7801FDA65892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D107FB4-EA93-43CE-BFEE-7801FDA65892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D107FB4-EA93-43CE-BFEE-7801FDA65892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7236F7-6252-47FE-B655-987AFE24F797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7236F7-6252-47FE-B655-987AFE24F797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7236F7-6252-47FE-B655-987AFE24F797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7236F7-6252-47FE-B655-987AFE24F797}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85224C18-2EC7-424E-AD60-78F10D442840}
+	EndGlobalSection
+EndGlobal
