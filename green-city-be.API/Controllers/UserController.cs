@@ -17,7 +17,7 @@ namespace green_city_be.API.Controllers
             _userService = userService;
         }
 
-        [HttpPost("SignUp")]
+        [HttpPost("SignIn")]
         public async Task<IActionResult> SignIn([FromBody] UserAuthDTO authDTO)
         {
             var result = await _userService.SignIn(authDTO.Email, authDTO.Password);
