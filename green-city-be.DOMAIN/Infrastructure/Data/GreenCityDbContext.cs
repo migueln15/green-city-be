@@ -32,7 +32,8 @@ public partial class GreenCityDbContext : DbContext
         {
             entity.Property(e => e.CreatedAt).HasColumnType("datetime");
             entity.Property(e => e.Detail).HasMaxLength(500);
-            entity.Property(e => e.Location).HasMaxLength(1);
+            entity.Property(e => e.Type).HasMaxLength(3);
+            entity.Property(e => e.Location).HasMaxLength(150);
             entity.Property(e => e.Status)
                 .HasMaxLength(1)
                 .IsUnicode(false)

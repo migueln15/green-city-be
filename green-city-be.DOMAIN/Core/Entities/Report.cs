@@ -13,7 +13,7 @@ public partial class Report
 
     public string? Detail { get; set; }
 
-    public int? Type { get; set; }
+    public string? Type { get; set; }
 
     public string? Location { get; set; }
 
