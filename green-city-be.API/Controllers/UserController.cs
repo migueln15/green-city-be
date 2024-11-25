@@ -17,6 +17,20 @@ namespace green_city_be.API.Controllers
             _userService = userService;
         }
 
+        [HttpPost("SignUp")]
+        public async Task<IActionResult> SignUp([FromBody] UserAddDTO userAddDTO)
+        {
+            var validTypes = new[] { "CIU", "AUL", "ADM" };
+            if (!validTypes.Contains(userAddDTO.Type))
+            {
+                return BadRequest("El campo 'type' solo puede tener los valores: CIU, AUL o ADM.");
+            }
+
+            var result = await _userService.SignUp(userAddDTO);
+            if (!result) return BadRequest(result);
+            return Ok(result);
+        }
+
         [HttpPost("SignIn")]
         public async Task<IActionResult> SignIn([FromBody] UserAuthDTO authDTO)
         {

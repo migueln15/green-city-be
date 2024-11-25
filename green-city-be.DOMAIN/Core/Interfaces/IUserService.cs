@@ -4,6 +4,7 @@ namespace green_city_be.DOMAIN.Core.Interfaces
 {
     public interface IUserService
     {
+        Task<bool> SignUp(UserAddDTO userAddDTO);
         Task<UserResponseAuthDTO> SignIn(string email, string pwd);
     }
 }

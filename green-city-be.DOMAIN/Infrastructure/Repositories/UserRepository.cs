@@ -19,6 +19,13 @@ namespace green_city_be.DOMAIN.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
+        public async Task<bool> SignUp(User user)
+        {
+            await _dbContext.User.AddAsync(user);
+            int rows = await _dbContext.SaveChangesAsync();
+            return rows > 0;
+        }
+
         public async Task<User> SignIn(string email, string pwd)
         {
             return await _dbContext
